@@ -30,7 +30,7 @@ pub mod utils;
 
 /// A field element in the BN254 construction. Thin wrapper around `ark_bn254::fields::fr::Fr`.
 #[derive(Clone, Debug, From, Into, PartialEq, Eq, Display, FromStr)]
-pub struct FieldElement(pub(crate) Fr);
+pub struct FieldElement(pub Fr);
 
 /// A Groth16 proof in the BN254 construction. Thin wrapper around `ark_groth16::Proof::<ark_bn254::Bn254>`.
 #[derive(Debug, From)]
